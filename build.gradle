@@ -1,0 +1,75 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version ='1.2.31'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    //Android config
+    config = [
+            compileSdkVersion: 27,
+            buildToolsVersion: '27.0.3',
+            minSdkVersion    : 18,
+            targetSdkVersion : 27
+    ]
+
+    //Android dependencies
+    dependencies = [
+            supportLibraryVersion                  : '27.1.1',
+            junitVersion                           : '4.12',
+            constraintLayoutVersion                : '1.1.2',
+            multidexVersion                        : '1.0.3',
+            supportTestRunnerVersion               : '0.5',
+            supportTestRulesVersion                : '0.5',
+            espressoCoreVersion                    : '2.2.2',
+            alibabaArouterCompilerVersion          : '1.1.2',
+            alibabaArouterApiVersion               : '1.2.1',
+            amitshekharAndroidDebugDbVersion       : '1.0.1',
+            nordicsemiDFUVersion                   : '1.7.0',
+            yolandaNohttpVersion                   : '1.1.0',
+            bumptechGlideVersion                   : '3.7.0',
+            reactivexRxjavaVersion                 : '2.1.3',
+            reactivexRxandroidVersion              : '2.0.1',
+            bongSdkVersion                         : '2.3.4',
+            multitypeVersion                       : '3.0.0',
+            getuisdkVersion                        : '2.12.3.0',
+            yanzhenjierecyclerviewswipeVersion     : '1.1.4',
+            yanzhenjieydivideritemdecorationVersion: '2.0',
+            dessmannzxingVersion                   : '1.0.2',
+            umenganalyticsVersion                  : '6.1.4',
+            umengcommonsdkVersion                  : '1.4.1',
+            timepickerVersion                      : '1.0.8',
+            flexboxVersion                         : '0.3.1',
+            fastjsonVersion                        : '1.2.9',
+            rxbindingVersion                       : '1.0.0',
+            xsnowVersion                           : '2.1.9',
+            blankjUtilCodeVersion                  : '1.19.4'
+    ]
+}

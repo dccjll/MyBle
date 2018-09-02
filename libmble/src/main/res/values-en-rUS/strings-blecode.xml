@@ -1,0 +1,66 @@
+<resources>
+    <string-array name="base_baseMsgCode">
+        <item>-60014#系统异常|IFNO</item>
+        <item>-60015#wifi连接失败|INFO</item>
+        <item>-60016#wifi密码错误|INFO</item>
+        <item>-60017#请检查wifi密码|ERROR</item>
+        <item>-60018#请检查wifi wifiSSID|ERROR</item>
+        <item>-60019#添加wifi配置失败|ERROR</item>
+        <item>-60020#检测wifi配置超时|ERROR</item>
+        <item>-60034#加载通讯录数据异常|ERROR</item>
+    </string-array>
+    <string-array name="mble_bleMsgCode">
+        <item>-10000#Phone not support Bluetooth low energy|INFO</item>
+        <item>-10001#Failed to get Bluetooth management service|ERROR</item>
+        <item>-10002#Failed to get Bluetooth adapter|ERROR</item>
+        <item>-10003#Please check device mac address or name|INFO</item>
+        <item>-10004#Unable to get sensor manager|ERROR</item>
+        <item>-10005#Unable to get gravity sensor|ERROR</item>
+        <item>-10006#Network anomaly|INFO</item>
+        <item>-10007#Device disconnected|INFO</item>
+        <item>-10008#Received Bluetooth underlay stack exception message|ERROR</item>
+        <item>-10009#No devices found, please make sure the device Bluetooth is on and within a certain range|INFO</item>
+        <item>-10010#Firmware update MAC address conversion failed|ERROR</item>
+        <item>-10011#File format detection failed|ERROR</item>
+        <item>-10012#Start scan anomaly|ERROR</item>
+        <item>-10013#Scanning Bluetooth device requires location permission|INFO</item>
+        <item>-10014#Location permission is disabled|INFO</item>
+        <item>-10015#Bluetooth is off, please turn on it in settings center|INFO</item>
+        <item>-10016#Current operation requires location permission and positioning, please access the mobile phone location and turn on the function, and try again.|INFO</item>
+        <item>-10017#Scanning, please wait|INFO</item>
+        <item>-10018#Bluetooth connection failed|INFO</item>
+        <item>-10019#Bluetooth device (or Bluetooth adapter or target device mac address) verification failed|ERROR</item>
+        <item>-10020#The maximum number of Bluetooth devices is connected and no more devices can be added|INFO</item>
+        <item>-10021#Unconnected|INFO</item>
+        <item>-10022#Connection status anomaly|ERROR</item>
+        <item>-10023#Service list empty|ERROR</item>
+        <item>-10024#Notification UUID list validation failed|ERROR</item>
+        <item>-10025#No matching notification service was found|ERROR</item>
+        <item>-10026#No matching notification feature was found|ERROR</item>
+        <item>-10027#Specified notification fail to work|ERROR</item>
+        <item>-10028#No matching notification feature descriptor was found|ERROR</item>
+        <item>-10029#Bluetooth underlayer enabled notification failed|ERROR</item>
+        <item>-10030#Bluetooth underlayer notification setting enable status failed|ERROR</item>
+        <item>-10031#Bluetooth underlayer write notification descriptor failed|ERROR</item>
+        <item>-10032#Write data UUID list validation failed|ERROR</item>
+        <item>-10033#Written data is empty|ERROR</item>
+        <item>-10034#Data packet anomaly|ERROR</item>
+        <item>-10035#No matching write data service was found|ERROR</item>
+        <item>-10036#No matching write data feature was found|ERROR</item>
+        <item>-10037#Specified service does not have data writting function|ERROR</item>
+        <item>-10038#Bluetooth underlyer data writting setting failed|ERROR</item>
+        <item>-10039#Bluetooth underlayer data writing failed|ERROR</item>
+        <item>-10040#Bluetooth timeout|INFO</item>
+        <item>-10041#Timeout and disconnect|ERROR</item>
+        <item>-10042#Communication UUID group validation failed|ERROR</item>
+        <item>-10043#Scanning anomaly|INFO</item>
+        <item>-10044#Firmware update failed|INFO</item>
+        <item>-10045#Please check firmware address|ERROR</item>
+        <item>-10046#Firmware download failed|ERROR</item>
+        <item>-10047#Firmware address points to an internal address, but no file exists|ERROR</item>
+        <item>-10048#Network address firmware upgrade is not supported for the moment|ERROR</item>
+        <item>-10049#Bluetooth is off|INFO</item>
+        <item>-10050#Please turn on the phone positioning function|INFO</item>
+        <item>-10051#Connection anomaly|INFO</item>
+    </string-array>
+</resources>

@@ -1,0 +1,90 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.dccjll'
+
+android {
+    compileSdkVersion config.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode 33
+        versionName "3.1.10"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+repositories {
+    //添加一个本地仓库，并把libs目录作为仓库的地址
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    //android support
+    api "com.android.support:appcompat-v7:$rootProject.ext.dependencies.supportLibraryVersion"
+    api "com.android.support.constraint:constraint-layout:$rootProject.ext.dependencies.constraintLayoutVersion"
+    api "com.android.support:cardview-v7:$rootProject.ext.dependencies.supportLibraryVersion"
+    api "com.android.support:design:$rootProject.ext.dependencies.supportLibraryVersion"
+    api "com.android.support:multidex:$rootProject.ext.dependencies.multidexVersion"
+    api "com.android.support:recyclerview-v7:$rootProject.ext.dependencies.supportLibraryVersion"
+    api "com.android.support:support-v4:$rootProject.ext.dependencies.supportLibraryVersion"
+    //arouter-api
+    api "com.alibaba:arouter-api:$rootProject.ext.dependencies.alibabaArouterApiVersion"
+
+    //debug-db
+    debugApi("com.amitshekhar.android:debug-db:$rootProject.ext.dependencies.amitshekharAndroidDebugDbVersion", {
+        exclude group: 'com.google.code.gson'
+    })
+
+    //flexbox
+    api "com.google.android:flexbox:$rootProject.ext.dependencies.flexboxVersion"
+    api "com.alibaba:fastjson:$rootProject.ext.dependencies.fastjsonVersion"
+
+    //glide
+    api "com.github.bumptech.glide:glide:$rootProject.ext.dependencies.bumptechGlideVersion"
+
+    //kotlin-stdlib-jdk7
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //multitype
+    api("me.drakeet.multitype:multitype:$rootProject.ext.dependencies.multitypeVersion", {
+        exclude group: 'com.android.support'
+    })
+
+    //nohttp
+    api "com.yolanda.nohttp:nohttp:$rootProject.ext.dependencies.yolandaNohttpVersion"
+
+    //pickview
+    api "com.github.dessmann:pickview:$rootProject.ext.dependencies.timepickerVersion"
+
+    //recyclerview-swipe
+    api "com.yanzhenjie:recyclerview-swipe:$rootProject.ext.dependencies.yanzhenjierecyclerviewswipeVersion"
+    /*//rxjava
+    api "io.reactivex.rxjava2:rxjava:$rootProject.ext.dependencies.reactivexRxjavaVersion"
+    //rxandroid
+    api "io.reactivex.rxjava2:rxandroid:$rootProject.ext.dependencies.reactivexRxandroidVersion"*/
+    api "com.vise.xiaoyaoyou:xsnow:$rootProject.ext.dependencies.xsnowVersion"
+    //rxbinding 内部引入了rxjava与rxandroid第一版
+    api("com.jakewharton.rxbinding:rxbinding:$rootProject.ext.dependencies.rxbindingVersion", {
+        exclude group: 'io.reactivex'
+        exclude group: 'com.android.support'
+    })
+
+    //y_divideritemdecoration
+    api "com.yanyusong.y_divideritemdecoration:y_divideritemdecoration:$rootProject.ext.dependencies.yanzhenjieydivideritemdecorationVersion"
+
+    api "no.nordicsemi.android:dfu:$rootProject.ext.dependencies.nordicsemiDFUVersion"
+    api "com.blankj:utilcode:$rootProject.ext.dependencies.blankjUtilCodeVersion"
+}

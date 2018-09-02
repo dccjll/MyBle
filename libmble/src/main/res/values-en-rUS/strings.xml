@@ -1,0 +1,50 @@
+<resources>
+    <!-- Enable Location Permission prompt start -->
+    <string name="mble_scan_need_location_feature">Bluetooth scanning requires location functionality, need to open the it in setting center</string>
+    <!-- Enable Location Permission prompt end -->
+
+    <!-- Scan device interface label prompt info  start -->
+    <string name="mble_scan_device_nearby">scans nearby devices</string>
+    <!-- Scan device interface label prompt info  end -->
+
+    <!-- Positioning authority and function error code info start -->
+    <string name="mble_location_feature_denied">Location feature denied</string>
+    <string name="mble_cancel_open_location_setting">Cancel open location setting</string>
+    <!-- Positioning authority and function error code info end -->
+
+    <!-- Permission explain info start -->
+    <string name="base_explain_need_calendar_permission">Need calendar permission</string>
+    <string name="base_explain_need_camera_permission">Need camera permission</string>
+    <string name="base_explain_need_contacts_permission">Need contacts permission</string>
+    <string name="base_explain_need_location_permission">Need location permission</string>
+    <string name="base_explain_need_record_audio_permission">Need record audio permission</string>
+    <string name="base_explain_need_phone_permission">Need phone access permission</string>
+    <string name="base_explain_need_sensors_permission">Need sensors permission</string>
+    <string name="base_explain_need_sms_permission">Need sms permission</string>
+    <string name="base_explain_need_sdcard_permission">Need sdcard read and write permission</string>
+    <!-- Permission explain info end -->
+
+    <!-- Permission setting interface explain info start -->
+    <string name="base_explain_open_app_calendar_permission_settings">Open APP calendar permission setting</string>
+    <string name="base_explain_open_app_camera_permission_settings">Open APP camera permission settings</string>
+    <string name="base_explain_open_app_contacts_permission_settings">Open APP contacts permission settings</string>
+    <string name="base_explain_open_app_location_permission_settings">Open APP location permission settings</string>
+    <string name="base_explain_open_app_record_audio_permission_settings">Open APP record audio permission settings</string>
+    <string name="base_explain_open_app_phone_permission_settings">Open APP phone permission settings</string>
+    <string name="base_explain_open_app_sensors_permission_settings">Open APP sensors permission settings</string>
+    <string name="base_explain_open_app_sms_permission_settings">Open APP SMS permission settings</string>
+    <string name="base_explain_open_app_sdcard_permission_settings">Open APP sdcard permission settings</string>
+    <!-- Permission setting interface explain info  end -->
+
+    <!-- Permission denied start -->
+    <string name="base_calendar_permission_denied">Calendar permission denied</string>
+    <string name="base_camera_permission_denied">Camera permission denied</string>
+    <string name="base_contacts_permission_denied">Contacts permission denied</string>
+    <string name="base_location_permission_denied">Location permission denied</string>
+    <string name="base_record_audio_permission_denied">Record audio permission denied</string>
+    <string name="base_phone_permission_denied">Phone audio permission denied</string>
+    <string name="base_sensors_permission_denied">Sensors audio permission denied</string>
+    <string name="base_sms_permission_denied">SMS permission denied</string>
+    <string name="base_storage_permission_denied">Storage permission denied</string>
+    <!-- Permission denied end -->
+</resources>
