@@ -115,6 +115,9 @@ public class DeviceFirewareUpdate {
         public void onProgressChanged(String deviceAddress, int percent, float speed, float avgSpeed, int currentPart, int partsTotal) {
             LogUtils.i(TAG, "更新进度,pecent=" + percent);
             progress = percent;
+            if (progress == 100) {
+                updateFinished = true;
+            }
             if (onSimpleDfuProgressListener != null) {
                 onSimpleDfuProgressListener.onProgressChanged(deviceAddress, percent, speed, avgSpeed, currentPart, partsTotal);
             }
@@ -132,7 +135,7 @@ public class DeviceFirewareUpdate {
 
         @Override
         public void onDeviceDisconnected(String deviceAddress) {
-            LogUtils.e(TAG, "dfu已断开连接");
+            LogUtils.e(TAG, "dfu已断开连接,updateFinished=" + updateFinished);
             if (!updateFinished) {
                 onError(deviceAddress, DfuBaseService.ERROR_CONNECTION_STATE_MASK, DfuBaseService.ERROR_TYPE_COMMUNICATION_STATE, "dfuDisconnected");
             }
