@@ -133,7 +133,7 @@ public class DeviceFirewareUpdate {
         @Override
         public void onDeviceDisconnected(String deviceAddress) {
             LogUtils.e(TAG, "dfu已断开连接");
-            if (progress != 99 && !updateFinished) {
+            if (!updateFinished) {
                 onError(deviceAddress, DfuBaseService.ERROR_CONNECTION_STATE_MASK, DfuBaseService.ERROR_TYPE_COMMUNICATION_STATE, "dfuDisconnected");
             }
         }
